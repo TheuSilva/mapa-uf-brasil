@@ -4,6 +4,9 @@ Gera **um único arquivo `.html`** — sem servidor, sem CDN, sem `node_modules`
 coroplético interativo do Brasil, um painel que acompanha o mouse e um mini-mapa por categoria.
 A entrada é um CSV de cinco colunas.
 
+**▶ [Abrir a demonstração ao vivo](https://theusilva.github.io/mapa-uf-brasil/)** — o mapa abaixo,
+funcionando, com dados sintéticos. Passe o mouse pelos estados.
+
 ![O mapa com todas as categorias](docs/exemplo.png)
 
 ```bash
