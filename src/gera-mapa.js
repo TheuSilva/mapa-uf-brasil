@@ -602,7 +602,7 @@ function painel(){
           '</span>' : 'Brasil') + '</b>' +
           (naUf ? '<span class="fix'+(S.fixo?'':' off')+'" onclick="escolheUf(\\''+alvo+'\\')">' +
                   (S.fixo ? 'fixado - clique para soltar' : 'clique no mapa para fixar') + '</span>'
-                : '<span class="fix off">passe o mouse no mapa</span>') + '</div>';
+                : '<span class="fix off">passe o mouse ou toque no mapa</span>') + '</div>';
   h += '<div class="resumo"><div>'+R.fatoCurto+'<b>'+fmtN(arr.length)+'</b></div>' +
        '<div>'+ROT_METRICA[S.metrica]+'<b>'+(v==null?"-":fmtM(v))+'</b></div>' +
        (naUf && !MAIOR_MELHOR() && L.r!=null
@@ -760,7 +760,8 @@ function legenda(){
       'A r\\u00e9gua desta m\\u00e9trica \\u00e9 absoluta, n\\u00e3o comparativa.'
     : 'A cor \\u00e9 a <b>raz\\u00e3o</b> entre o valor da UF e ' + alvoCor + ': verde at\\u00e9 a ' +
       'refer\\u00eancia, amarelo entre 1&times; e 2&times;, e <b>vermelho a partir do dobro</b>. ' +
-      'Passe o mouse por um estado para ver ' + (R.entidades.toLowerCase()) + ' dele no painel ao lado.';
+      'Passe o mouse por um estado \\u2014 ou toque nele, no celular \\u2014 para ver ' +
+      (R.entidades.toLowerCase()) + ' dele no painel ao lado.';
 }
 
 /* ---------- ciclo ---------- */
@@ -907,8 +908,10 @@ const HTML = `<!doctype html>
       n&uacute;mero frouxo &eacute; pior que n&atilde;o colorir. No painel, essas linhas ficam
       esmaecidas em vez de sumir.</p>
     <div class="aviso"><b>Roda no mapa</b> aproxima, <b>arrastar</b> move, <b>clique</b> em um
-      estado fixa o painel (Esc solta). O painel ao lado acompanha o mouse e mostra, no lugar
-      sob o cursor, como cada ${esc(R.entidade.toLowerCase())} vai ali.</div>
+      estado fixa o painel (Esc solta). O painel ao lado acompanha o cursor e mostra, no lugar
+      sob ele, como cada ${esc(R.entidade.toLowerCase())} vai ali.
+      <b>No celular</b> n&atilde;o h&aacute; cursor: <b>toque</b> num estado para o painel ir at&eacute;
+      ele, e toque de novo para soltar.</div>
     <p class="nota">Malha das UFs: IBGE, servi&ccedil;o de malhas territoriais, qualidade
       intermedi&aacute;ria, proje&ccedil;&atilde;o de Mercator. Ilhas oce&acirc;nicas
       (Fernando de Noronha, Trindade) removidas do enquadramento.</p>
