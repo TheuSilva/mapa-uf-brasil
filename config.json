@@ -1,0 +1,26 @@
+{
+  "_comentario": "Vocabulario da tela. O motor nao sabe do que voce esta falando: ele mede o tempo entre duas datas e compara categorias dentro de cada UF. Troque estes rotulos e o mesmo mapa serve para entrega de frete, tempo de atendimento, prazo de exame -- o que tiver UF, um local, uma categoria e duas datas.",
+
+  "titulo": "Tempo até a liminar",
+  "subtitulo": "Ajuizamento → Liminar Deferida, por UF e por banco",
+
+  "entidade": "Banco",
+  "entidades": "Bancos",
+  "local": "Comarca",
+  "locais": "Comarcas",
+
+  "fato": "liminares",
+  "todos": "todos os bancos",
+  "todosCurto": "Todos",
+  "doArtigo": "do banco",
+  "fatoCurto": "Lim.",
+  "unidade": "dias",
+
+  "dataInicio": "do ajuizamento",
+  "dataFim": "da liminar",
+
+  "meta": {
+    "limite": 18,
+    "alvo": 95
+  }
+}

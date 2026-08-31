@@ -1,0 +1,5 @@
+# Fim de linha normalizado em LF no repositorio, para o diff nao virar ruido
+# quando alguem clonar no Windows.
+* text=auto eol=lf
+*.png binary
+*.json text eol=lf

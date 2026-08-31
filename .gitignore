@@ -1,0 +1,18 @@
+# ⚠ CSV NAO ENTRA NO REPOSITORIO.
+# A entrada deste projeto costuma ser extracao de base de producao. Ignorar por
+# padrao e' a barreira que impede um `git add .` distraido de publicar dado real.
+# A demonstracao e' regerada com `npm run demo`, entao nada se perde.
+*.csv
+
+# Saida gerada
+site/
+*.html
+!docs/*.html
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Sistema
+.DS_Store
+Thumbs.db

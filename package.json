@@ -1,0 +1,16 @@
+{
+  "name": "mapa-uf-brasil",
+  "version": "1.0.0",
+  "description": "Mapa de calor interativo do Brasil por UF em um HTML autonomo, sem dependencias e sem servidor.",
+  "keywords": ["mapa", "brasil", "uf", "choropleth", "heatmap", "svg", "ibge", "dataviz"],
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "demo": "node scripts/gera-demo.js",
+    "build": "node src/gera-mapa.js dados/exemplo.csv site/mapa.html",
+    "start": "npm run demo && npm run build",
+    "malha": "node scripts/baixa-malha.js",
+    "teste": "node teste/testa.js"
+  }
+}
