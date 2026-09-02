@@ -15,8 +15,6 @@ git clone <este-repo> && cd mapa-uf-brasil
 npm start          # gera dados sintéticos e constrói site/mapa.html
 ```
 
-Abra `site/mapa.html` com dois cliques. Não há dependências: só Node 18+ e a biblioteca padrão.
-
 ---
 
 ## O problema que ele resolve
