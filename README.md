@@ -123,10 +123,6 @@ que anula a escala: um "SP" de 14px viraria 84px em 6×.
 a cada combinação de filtro. As datas viajam como inteiros (dias desde uma âncora) e os índices
 em base 36, o que mantém um CSV de 26 mil linhas em ~460 KB de HTML.
 
-**A âncora das datas é 2000-01-01, e isso é uma cicatriz.** Numa versão anterior ela era 2020:
-toda data anterior virava número negativo, indistinguível do `-1` que marcava "sem data", e o
-registro sumia calado. *Sentinela numérica não pode morar no mesmo domínio do dado.*
-
 **O filtro de categoria não entra na agregação.** Se o recorte já viesse filtrado, a referência
 seria a própria categoria e toda UF sairia em 1,00× o mapa ficaria uniformemente verde e
 pareceria estar funcionando.
